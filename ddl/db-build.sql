@@ -31,14 +31,3 @@ CREATE TABLE nbu_rates
 );
 
 SHOW TABLES;
-tee log\db-grant.log
-
-grant all privileges on nbudb.* to 'devadm'@'%';
-grant super on *.* to 'devadm'@'%';
-show grants for 'devadm'@'%';
-tee log\db-grant.log
-
-grant all privileges on nbudb.* to 'devadm'@'%';
-grant super on *.* to 'devadm'@'%';
-show grants for 'devadm'@'%';
-
