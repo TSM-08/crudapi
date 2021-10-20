@@ -13,7 +13,7 @@ echo *    create  application
 echo * 
 echo ****************************************
 
-oc new-app https://github.com/TSM-08/crudapi#main --context-dir=/node-server  --name="nodesrv" -e IDB_HOST=mysql -e IDB_DB=test4 -e IDB_USR=devadm -e IDB_PSW="**" --strategy=source"
+oc new-app https://github.com/TSM-08/crudapi#main --context-dir=/node-server  --name="nodesrv" -e IDB_HOST=mysql -e IDB_DB=nbudb -e IDB_USR=devadm -e IDB_PSW="**" --strategy=source"
 
 pause
 
