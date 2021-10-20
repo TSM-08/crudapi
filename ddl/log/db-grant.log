@@ -1,0 +1,17 @@
+--------------
+grant all privileges on nbudb.* to 'devadm'@'%'
+--------------
+
+--------------
+grant super on *.* to 'devadm'@'%'
+--------------
+
+--------------
+show grants for 'devadm'@'%'
+--------------
+
+Grants for devadm@%
+GRANT SUPER ON *.* TO `devadm`@`%`
+GRANT ALL PRIVILEGES ON `nbudb`.* TO `devadm`@`%`
+GRANT ALL PRIVILEGES ON `sampledb`.* TO `devadm`@`%`
+GRANT ALL PRIVILEGES ON `test4`.* TO `devadm`@`%`

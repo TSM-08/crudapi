@@ -1,1 +1,0 @@
-oc port-forward mysqldb-1-4mczv 13306:3306
