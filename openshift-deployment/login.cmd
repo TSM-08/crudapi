@@ -8,7 +8,7 @@ echo * oc config view --minify -o jsonpath='{.clusters[*].cluster.server}'
 echo **************************************************************
 
   set OC_URL=https://api.sandbox.x8i5.p1.openshiftapps.com:6443
-  set OC_TOKEN=sha256~aUwkqtsLUZ4VxpLvIZ9p2inTxaz_dT8-akJ93HDlwnE
+  set OC_TOKEN=sha256~HgFQ7U3zFlHseX0KTz1lardBybUs6IYkSZSE9Ag2vQc
 
 
   set APP_DNS=apps.sandbox.x8i5.p1.openshiftapps.com

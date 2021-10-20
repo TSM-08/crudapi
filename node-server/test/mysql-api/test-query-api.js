@@ -8,16 +8,14 @@ const assert = require('chai').assert;
 const should = require('chai').should();
 
 let i_islog = true;
-//let i_baseurl = 'http://localhost:8181';
-let i_baseurl = 'http://nodesrv-stseluiko-dev.apps.sandbox.x8i5.p1.openshiftapps.com';
+let i_baseurl = 'http://localhost:8080';
+//let i_baseurl = 'http://nodesrv-stseluiko-dev.apps.sandbox.x8i5.p1.openshiftapps.com';
 
 let i_rowcont=0;
 
+describe('Тестовые кейсы на сервис /api/v1/ccy_query', () => {
 
-
-describe('Тестовые кейсы на сервис /api/v1/emps', () => {
-
-    it('GET /api/v1/emp/ - Ожидаем ответ 200. Прочитать все записи из таблицы', function (done) {
+    it('GET /api/v1/ccy_query - Ожидаем ответ 200. Прочитать все записи из таблицы', function (done) {
         //this.skip();
      
         if (i_islog) {
@@ -25,7 +23,7 @@ describe('Тестовые кейсы на сервис /api/v1/emps', () => {
         };
 
         request( i_baseurl )
-            .get(`/api/v1/emps`)
+            .get(`/api/v1/ccy_query`)
             .set('Content-Type', 'application/json')
             .expect('Content-Type', 'application/json; charset=utf-8')
             .expect(200)
@@ -53,20 +51,16 @@ describe('Тестовые кейсы на сервис /api/v1/emps', () => {
                 }
             });
     });
+ 
 
-
-
-
-  
-
-    it('DELTE /api/v1/emps - Ожидаем ответ 200. Удалить все записи из таблицы', function (done) {
+    it('DELTE /api/v1/ccy_query - Ожидаем ответ 200. Удалить все записи из таблицы', function (done) {
         //this.skip();
         if (i_islog) {
             //console.log("Запрос: :id=" + l_idrec );
         };
 
         request( i_baseurl )
-            .delete('/api/v1/emps')
+            .delete('/api/v1/ccy_query')
             .set('Content-Type', 'application/json')
             .expect('Content-Type', 'application/json; charset=utf-8')
             .expect(200)
@@ -94,7 +88,7 @@ describe('Тестовые кейсы на сервис /api/v1/emps', () => {
     });   
     
     
-    it('GET /api/v1/emp/ - Ожидаем ответ 200. Прочитать все записи из таблицы после удаления. Ождаем  0 записей === пустой массив', function (done) {
+    it('GET /api/v1/ccy_query - Ожидаем ответ 200. Прочитать все записи из таблицы после удаления. Ождаем  0 записей === пустой массив', function (done) {
         //this.skip();
      
         if (i_islog) {
@@ -102,7 +96,7 @@ describe('Тестовые кейсы на сервис /api/v1/emps', () => {
         };
 
         request( i_baseurl )
-            .get(`/api/v1/emps`)
+            .get(`/api/v1/ccy_query`)
             .set('Content-Type', 'application/json')
             .expect('Content-Type', 'application/json; charset=utf-8')
             .expect(200)

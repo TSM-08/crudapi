@@ -43,8 +43,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indxRouter);
-app.use('/api/v1/ccy/crud' , ccyARouter);
-app.use('/api/v1/ccy/query', ccyQRouter);
+app.use('/api/v1/ccy_crud' , ccyARouter);
+app.use('/api/v1/ccy_query', ccyQRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
